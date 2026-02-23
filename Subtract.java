@@ -9,7 +9,8 @@ public class Subtract{
         System.out.print("Enter Second Number:");
         int b = sc.nextInt();
 
-        System.out.println(a-b);
+        int diff = a-b;
+        System.out.println("Differene Is:"+diff);
         
         sc.close();
     }
