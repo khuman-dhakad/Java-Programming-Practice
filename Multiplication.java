@@ -9,7 +9,9 @@ public class Multiplication{
         System.out.print("Enter Second Number:");
         int b = sc.nextInt();
 
-        System.out.println(a*b);
+        int mul= a*b;
+
+        System.out.println(mul);
         
         sc.close();
     }
