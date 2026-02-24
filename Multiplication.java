@@ -11,7 +11,7 @@ public class Multiplication{
 
         int mul= a*b;
 
-        System.out.println(mul);
+        System.out.println("Multiplication Is:"+mul);
         
         sc.close();
     }
