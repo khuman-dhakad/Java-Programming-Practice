@@ -8,8 +8,9 @@ public class Division{
 
         System.out.print("Enter Second Number:");
         float b = sc.nextInt();
+        float div = a/b;
 
-        System.out.println(a/b);
+        System.out.println("Result Is:"+div);
         
         sc.close();
     }
