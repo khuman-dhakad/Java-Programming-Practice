@@ -3,8 +3,9 @@ import java.util.Scanner;
 
 class Calculator {
     public static void calculateSum(int a,int b) {
+        int sum = a+b;
 
-        System.out.println(a+b);
+        System.out.println("Addition :"+sum);
 
     }
 
