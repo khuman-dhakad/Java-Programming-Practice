@@ -2,11 +2,9 @@
 import java.util.Scanner;
 
 class Calculator {
-    public static void calculateSum(int a,int b) {
+    public static int calculateSum(int a,int b) {
         int sum = a+b;
-
-        System.out.println("Addition :"+sum);
-
+        return sum;
     }
 
     public static void main(String[]args){
@@ -17,7 +15,8 @@ class Calculator {
         System.out.print("Enter First Number:");
         int b= sc.nextInt();
  
-        calculateSum(a,b);
+        int res=calculateSum(a,b);
+        System.out.println("Result Is: "+res);
         
     }
 }
