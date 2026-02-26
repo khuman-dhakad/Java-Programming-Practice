@@ -14,6 +14,10 @@ class Calculator {
         int mul = a*b;
         return mul;
     }
+    public static float calculateDiv(int a,int b) {
+        float div = (float)a/b;
+        return div;
+    }
 
     public static void main(String[]args){
 
@@ -32,6 +36,9 @@ class Calculator {
  
         int mul=calculateDiff(a,b);
         System.out.println("Result Is: "+mul);
+ 
+        float div=calculateDiv(a,b);
+        System.out.println("Result Is: "+div);
         
     }
 }
