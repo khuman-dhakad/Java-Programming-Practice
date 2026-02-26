@@ -10,6 +10,10 @@ class Calculator {
         int diff = a-b;
         return diff;
     }
+    public static int calculateMul(int a,int b) {
+        int mul = a*b;
+        return mul;
+    }
 
     public static void main(String[]args){
 
@@ -22,8 +26,12 @@ class Calculator {
         int res=calculateSum(a,b);
         System.out.println("Result Is: "+res);
  
-        int diff=calculateDiff(a,b);
+        int diff=calculateMul(a,b);
         System.out.println("Result Is: "+diff);
+        
+ 
+        int mul=calculateDiff(a,b);
+        System.out.println("Result Is: "+mul);
         
     }
 }
