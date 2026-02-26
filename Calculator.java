@@ -6,6 +6,10 @@ class Calculator {
         int sum = a+b;
         return sum;
     }
+    public static int calculateDiff(int a,int b) {
+        int diff = a-b;
+        return diff;
+    }
 
     public static void main(String[]args){
 
@@ -17,6 +21,9 @@ class Calculator {
  
         int res=calculateSum(a,b);
         System.out.println("Result Is: "+res);
+ 
+        int diff=calculateDiff(a,b);
+        System.out.println("Result Is: "+diff);
         
     }
 }
