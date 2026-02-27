@@ -33,6 +33,8 @@ public class BasicProject {
             case 4:
                 break;
             case 5:
+                break;
+            case 6:
                 System.out.println("Thankyou BBye!");
              sc.close();
              return;
