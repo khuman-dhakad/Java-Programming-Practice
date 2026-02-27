@@ -17,10 +17,27 @@ public class BasicProject {
             System.out.println("1.Division");
             System.out.println("1.Exit");
 
-            System.out.println("\nEnter Your Choice:");
+            System.out.print("\nEnter Your Choice:");
             choice = sc.nextInt();
 
         } while (choice != 5);
+
+        switch (choice) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                System.out.println("Thankyou BBye!");
+             sc.close();
+             return;
+                default :
+                System.out.println("Enter Valid Choice");
+        }
 
         sc.close();
     }
