@@ -40,6 +40,5 @@ public class BasicProject {
                 System.out.println("Enter Valid Choice");
         }
 
-        sc.close();
     }
 }
