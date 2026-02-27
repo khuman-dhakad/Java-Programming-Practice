@@ -12,10 +12,11 @@ public class BasicProject {
             System.out.println("-----------------------");
 
             System.out.println("1.Addition");
-            System.out.println("1.Subtract");
-            System.out.println("1.Multiplication");
-            System.out.println("1.Division");
-            System.out.println("1.Exit");
+            System.out.println("2.Subtract");
+            System.out.println("3.Multiplication");
+            System.out.println("4.Division");
+            System.out.println("5.Remainder");
+            System.out.println("6.Exit");
 
             System.out.print("\nEnter Your Choice:");
             choice = sc.nextInt();
