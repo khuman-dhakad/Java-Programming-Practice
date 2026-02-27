@@ -21,7 +21,7 @@ public class BasicProject {
             System.out.print("\nEnter Your Choice:");
             choice = sc.nextInt();
 
-        } while (choice != 5);
+        } while (choice != 6);
 
         switch (choice) {
             case 1:
