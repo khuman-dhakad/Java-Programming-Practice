@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BasicProject {
-    public static void calculateSum() {
+    public static void calculateSum(Scanner sc) {
 
         System.out.print("Enter First Number:");
         int a = sc.nextInt();
@@ -35,6 +35,7 @@ public class BasicProject {
 
             switch (choice) {
                 case 1:
+                    calculateSum(sc);
                     break;
                 case 2:
                     break;
