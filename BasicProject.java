@@ -22,6 +22,19 @@ public class BasicProject {
 
         int diff= a-b;
         System.out.println("Result Is:" + diff);
+    }
+    public static void calculateMul(){
+
+        System.out.print("Enter First Number:");
+        int a = sc.nextInt();
+
+        System.out.print("Enter Second Number:");
+        int b = sc.nextInt();
+
+        int mul = a*b;
+
+        System.out.println("Result Is:" + mul);
+
 
     }
 
