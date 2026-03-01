@@ -23,7 +23,7 @@ public class BasicProject {
         int diff= a-b;
         System.out.println("Result Is:" + diff);
     }
-    public static void calculateMul(){
+    public static void calculateMul(Scanner sc){
 
         System.out.print("Enter First Number:");
         int a = sc.nextInt();
@@ -66,6 +66,7 @@ public class BasicProject {
                     calculateDiff(sc);
                     break;
                 case 3:
+                    calculateMul(sc);
                     break;
                 case 4:
                     break;
