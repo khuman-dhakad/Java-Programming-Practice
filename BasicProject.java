@@ -12,6 +12,18 @@ public class BasicProject {
         int res = a + b;
         System.out.println("Result Is:" + res);
     }
+    public static void calculateDiff(){
+        
+        System.out.print("Enter First Number:");
+        int a = sc.nextInt();
+
+        System.out.print("Enter Second Number:");
+        int b = sc.nextInt();
+
+        int diff= a-b;
+        System.out.println("Result Is:" + diff);
+
+    }
 
     public static void main(String[] args) {
 
