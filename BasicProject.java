@@ -12,7 +12,7 @@ public class BasicProject {
         int res = a + b;
         System.out.println("Result Is:" + res);
     }
-    public static void calculateDiff(){
+    public static void calculateDiff(Scanner sc){
         
         System.out.print("Enter First Number:");
         int a = sc.nextInt();
@@ -50,6 +50,7 @@ public class BasicProject {
                     calculateSum(sc);
                     break;
                 case 2:
+                    calculateDiff(sc);
                     break;
                 case 3:
                     break;
