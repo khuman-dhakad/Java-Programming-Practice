@@ -1,63 +1,61 @@
-# 🚀 Java Programming Practice
+🚀 Java Programming Practice
+Hi 👋, I'm Khuman Dhakad
 
-Hi 👋, I'm Khuman Dhakad  
+Welcome to my Java Practice Repository — a dedicated space where I consistently improve my Core Java, Problem-Solving, and Data Structures & Algorithms (DSA) skills.
 
-I created this repository to **consistently practice Java programming** and strengthen my core programming and DSA fundamentals.
+This repository reflects my commitment to becoming a strong and placement-ready software developer through daily practice and continuous learning.
 
-This repo is part of my daily learning journey toward becoming a strong software developer.
+📌 About This Repository
+🔹 Primary Focus: Core Java & Problem Solving
+🔹 Language Used: Java
+🔹 Practice Type: Daily coding exercises
+🔹 Objective: Build strong fundamentals for technical interviews
 
----
+I regularly update this repository with new programs as part of my structured learning journey.
 
-## 📌 About This Repository
+📂 Repository Structure
+This repository currently includes:
 
-- 🧠 Focus: Core Java + Problem Solving  
-- 💻 Language: Java  
-- 🔄 Updated regularly with new practice programs  
-- 🎯 Goal: Build strong fundamentals for technical interviews  
+✅ Basic Java Programs
 
----
+✅ Conditional Statements & Loops
 
-## 📂 What You'll Find Here
+✅ Array Practice Problems
 
-This repository contains:
+✅ String Manipulation Problems
 
-- ✅ Basic Java programs  
-- ✅ Loop and condition practice  
-- ✅ Array problems  
-- ✅ String problems  
-- 🔜 Data Structures and Algorithms practice  
+🔜 Data Structures & Algorithms (In Progress)
 
-More programs will be added consistently as I progress.
+More structured DSA implementations and interview-level problems will be added soon.
 
----
+🌱 Current Learning Focus
+I am currently working on strengthening:
 
-## 🌱 My Current Learning Focus
+✔ Java Fundamentals (OOPs, Methods, Collections – upcoming)
 
-- Java fundamentals  
-- Problem-solving skills  
-- Data Structures & Algorithms (beginner level)  
-- Writing clean and readable code  
-- Building consistency in daily practice  
+✔ Problem-Solving Skills
 
----
+✔ Beginner-Level Data Structures & Algorithms
 
-## 📈 My Goal
+✔ Writing Clean & Readable Code
 
-> To become placement-ready and confident in solving coding interview problems.
+✔ Building Daily Coding Consistency
 
-I believe in:
+📈 Career Goal
+🎯 To become placement-ready and confident in solving real-world coding interview problems.
 
-- Consistency over intensity  
-- Learning by doing  
-- Improving step by step  
+💡 My Learning Philosophy
+Consistency over intensity
 
----
+Learn by building
 
-## 🤝 Connect With Me
+Improve 1% every day
 
-- GitHub: https://github.com/khuman-dhakad  
-- LeetCode: Khuman_Dhakad786  
+Focus on fundamentals first
 
----
+🤝 Connect With Me
+🔗 GitHub: https://github.com/khuman-dhakad
 
-⭐ If you are also learning Java, feel free to follow my journey!
+💻 LeetCode: Khuman_Dhakad786
+
+⭐ If you're also learning Java or preparing for placements, feel free to connect and grow together!
