@@ -40,13 +40,14 @@ public class BasicProject {
     public static void calculateDiv(Scanner sc){
 
         System.out.print("Enter First Number:");
-        double a = sc.nextDouble();
+        float a = sc.nextFloat();
 
         System.out.print("Enter Second Number:");
-        double b = sc.nextDouble();
+        float b = sc.nextFloat();
 
+        float div = a/b;
 
-        System.out.print(a/b);
+        System.out.println("Result Is:" + div);
     }
 
     public static void main(String[] args) {
