@@ -37,6 +37,17 @@ public class BasicProject {
 
 
     }
+    public static void calculateDiv(){
+
+        System.out.print("Enter First Number:");
+        float a = sc.nextInt();
+
+        System.out.print("Enter Second Number:");
+        float b = sc.nextInt();
+
+
+        System.out.print(div);
+    }
 
     public static void main(String[] args) {
 
