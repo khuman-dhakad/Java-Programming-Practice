@@ -40,10 +40,10 @@ public class BasicProject {
     public static void calculateDiv(){
 
         System.out.print("Enter First Number:");
-        float a = sc.nextInt();
+        double a = sc.nextDouble();
 
         System.out.print("Enter Second Number:");
-        float b = sc.nextInt();
+        double b = sc.nextDouble();
 
 
         System.out.print(div);
