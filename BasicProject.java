@@ -37,7 +37,7 @@ public class BasicProject {
 
 
     }
-    public static void calculateDiv(){
+    public static void calculateDiv(Scanner sc){
 
         System.out.print("Enter First Number:");
         double a = sc.nextDouble();
@@ -46,7 +46,7 @@ public class BasicProject {
         double b = sc.nextDouble();
 
 
-        System.out.print(div);
+        System.out.print(a/b);
     }
 
     public static void main(String[] args) {
@@ -80,6 +80,7 @@ public class BasicProject {
                     calculateMul(sc);
                     break;
                 case 4:
+                    calculateDiv(sc);
                     break;
                 case 5:
                     break;
