@@ -12,18 +12,20 @@ public class BasicProject {
         int res = a + b;
         System.out.println("Result Is:" + res);
     }
-    public static void calculateDiff(Scanner sc){
-        
+
+    public static void calculateDiff(Scanner sc) {
+
         System.out.print("Enter First Number:");
         int a = sc.nextInt();
 
         System.out.print("Enter Second Number:");
         int b = sc.nextInt();
 
-        int diff= a-b;
+        int diff = a - b;
         System.out.println("Result Is:" + diff);
     }
-    public static void calculateMul(Scanner sc){
+
+    public static void calculateMul(Scanner sc) {
 
         System.out.print("Enter First Number:");
         int a = sc.nextInt();
@@ -31,13 +33,13 @@ public class BasicProject {
         System.out.print("Enter Second Number:");
         int b = sc.nextInt();
 
-        int mul = a*b;
+        int mul = a * b;
 
         System.out.println("Result Is:" + mul);
 
-
     }
-    public static void calculateDiv(Scanner sc){
+
+    public static void calculateDiv(Scanner sc) {
 
         System.out.print("Enter First Number:");
         float a = sc.nextFloat();
@@ -45,9 +47,13 @@ public class BasicProject {
         System.out.print("Enter Second Number:");
         float b = sc.nextFloat();
 
-        float div = a/b;
+        if (b == 0) {
+            System.out.println("Cannot divide by zero");
+        } else {
+            float div = a / b;
+            System.out.println("Result Is:" + div);
+        }
 
-        System.out.println("Result Is:" + div);
     }
 
     public static void main(String[] args) {
