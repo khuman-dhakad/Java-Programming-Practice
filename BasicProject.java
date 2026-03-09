@@ -63,9 +63,12 @@ public class BasicProject {
         System.out.print("Enter Second Number:");
         int b = sc.nextInt();
 
-        int rem = a % b;
-
-        System.out.println("Result Is:" + rem);
+        if (b == 0) {
+            System.out.println("Error: Cannot find remainder when divisor is 0.");
+        } else {
+            int rem = a % b;
+            System.out.println("Result Is: " + rem);
+        }
     }
 
     public static void main(String[] args) {
