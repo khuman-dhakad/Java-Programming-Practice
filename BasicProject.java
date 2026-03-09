@@ -102,6 +102,7 @@ public class BasicProject {
                     calculateDiv(sc);
                     break;
                 case 5:
+                    calculateRem(sc);
                     break;
                 case 6:
                     System.out.println("Thankyou BBye!");
