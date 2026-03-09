@@ -55,6 +55,7 @@ public class BasicProject {
         }
     }
 
+    // Remainder Function
     public static void calculateRem(Scanner sc) {
 
         System.out.print("Enter First Number:");
