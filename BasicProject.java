@@ -53,7 +53,19 @@ public class BasicProject {
             float div = a / b;
             System.out.println("Result Is:" + div);
         }
+    }
 
+    public static void calculateRem(Scanner sc) {
+
+        System.out.print("Enter First Number:");
+        int a = sc.nextInt();
+
+        System.out.print("Enter Second Number:");
+        int b = sc.nextInt();
+
+        int rem = a % b;
+
+        System.out.println("Result Is:" + rem);
     }
 
     public static void main(String[] args) {
