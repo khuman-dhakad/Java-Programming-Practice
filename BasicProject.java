@@ -78,7 +78,7 @@ public class BasicProject {
         int choice = 0;
 
         do {
-            System.out.println("- ------------------ -------");
+            System.out.println("\n----------------------------");
             System.out.println("| Welcome to My Calculator |");
             System.out.println("----------------------------");
 
