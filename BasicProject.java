@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class BasicProject {
+
+    // Function to calculate the sum of two numbers entered by the user
     public static void calculateSum(Scanner sc) {
 
         System.out.print("Enter First Number:");
@@ -13,6 +15,7 @@ public class BasicProject {
         System.out.println("Result Is:" + res);
     }
 
+    // Function to calculate the difference between two numbers
     public static void calculateDiff(Scanner sc) {
 
         System.out.print("Enter First Number:");
@@ -25,6 +28,7 @@ public class BasicProject {
         System.out.println("Result Is:" + diff);
     }
 
+    // Function to calculate the multiplication of two numbers
     public static void calculateMul(Scanner sc) {
 
         System.out.print("Enter First Number:");
@@ -39,6 +43,7 @@ public class BasicProject {
 
     }
 
+    // Function to perform division and handle divide-by-zero case
     public static void calculateDiv(Scanner sc) {
 
         System.out.print("Enter First Number:");
@@ -55,7 +60,7 @@ public class BasicProject {
         }
     }
 
-    // Remainder Function
+    // Function to calculate the remainder of two numbers using modulus operator
     public static void calculateRem(Scanner sc) {
 
         System.out.print("Enter First Number:");
