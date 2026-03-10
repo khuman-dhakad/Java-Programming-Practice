@@ -42,15 +42,15 @@ public class BasicProject {
     public static void calculateDiv(Scanner sc) {
 
         System.out.print("Enter First Number:");
-        float a = sc.nextFloat();
+        int a = sc.nextInt();
 
         System.out.print("Enter Second Number:");
-        float b = sc.nextFloat();
+        int b = sc.nextInt();
 
         if (b == 0) {
             System.out.println("Cannot divide by zero");
         } else {
-            float div = a / b;
+            float div = (float)a / b;
             System.out.println("Result Is:" + div);
         }
     }
