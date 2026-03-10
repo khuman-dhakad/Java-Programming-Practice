@@ -116,6 +116,5 @@ public class BasicProject {
                     System.out.println("Enter Valid Choice");
             }
         } while (choice != 6);
-
     }
 }
