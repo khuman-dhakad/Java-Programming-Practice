@@ -1,61 +1,66 @@
-🚀 Java Programming Practice
-Hi 👋, I'm Khuman Dhakad
+# 🚀 Java Programming Practice
 
-Welcome to my Java Practice Repository — a dedicated space where I consistently improve my Core Java, Problem-Solving, and Data Structures & Algorithms (DSA) skills.
+Hi 👋, I'm **Khuman Dhakad**
 
-This repository reflects my commitment to becoming a strong and placement-ready software developer through daily practice and continuous learning.
+Welcome to my **Java Programming Practice Repository** — a place where I consistently improve my **Core Java fundamentals, problem-solving ability, and Data Structures & Algorithms (DSA)** skills.
 
-📌 About This Repository
-🔹 Primary Focus: Core Java & Problem Solving
-🔹 Language Used: Java
-🔹 Practice Type: Daily coding exercises
-🔹 Objective: Build strong fundamentals for technical interviews
+This repository reflects my **daily coding practice and learning journey** toward becoming a **placement-ready software developer**.
 
-I regularly update this repository with new programs as part of my structured learning journey.
+---
 
-📂 Repository Structure
+# 📌 About This Repository
+
+🔹 **Language:** Java  
+🔹 **Focus:** Core Java & Logic Building  
+🔹 **Purpose:** Strengthen problem-solving skills  
+🔹 **Practice Style:** Daily coding exercises and mini projects  
+
+I regularly update this repository with **new Java programs, improved logic, and better coding practices**.
+
+---
+
+# 📂 Repository Structure
+
 This repository currently includes:
 
-✅ Basic Java Programs
+### ✅ Basic Java Programs
+- Input / Output Programs
+- Arithmetic Operations
+- Console-based Applications
 
-✅ Conditional Statements & Loops
+### ✅ Logic Building Programs
+- Conditional Statements
+- Loops
+- Switch Case Programs
 
-✅ Array Practice Problems
+### ✅ Mini Projects
+- **Console Calculator**
+- Menu-driven Programs
 
-✅ String Manipulation Problems
+### 🔜 Upcoming Topics
+- Object-Oriented Programming (OOP)
+- Arrays & Strings
+- Recursion
+- Searching & Sorting
+- Data Structures & Algorithms
 
-🔜 Data Structures & Algorithms (In Progress)
+---
 
-More structured DSA implementations and interview-level problems will be added soon.
+# 🧮 Sample Project – Calculator
 
-🌱 Current Learning Focus
-I am currently working on strengthening:
+One of the beginner mini projects included in this repository is a **console-based calculator application**.
 
-✔ Java Fundamentals (OOPs, Methods, Collections – upcoming)
+### Features
 
-✔ Problem-Solving Skills
+✔ Addition  
+✔ Subtraction  
+✔ Multiplication  
+✔ Division with zero handling  
+✔ Clean function-based implementation  
 
-✔ Beginner-Level Data Structures & Algorithms
+### Example Code Snippet
 
-✔ Writing Clean & Readable Code
-
-✔ Building Daily Coding Consistency
-
-📈 Career Goal
-🎯 To become placement-ready and confident in solving real-world coding interview problems.
-
-💡 My Learning Philosophy
-Consistency over intensity
-
-Learn by building
-
-Improve 1% every day
-
-Focus on fundamentals first
-
-🤝 Connect With Me
-🔗 GitHub: https://github.com/khuman-dhakad
-
-💻 LeetCode: Khuman_Dhakad786
-
-⭐ If you're also learning Java or preparing for placements, feel free to connect and grow together!
+```java
+public static int calculateSum(int a, int b) {
+    return a + b;
+}
