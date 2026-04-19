@@ -14,6 +14,9 @@ public class printName{
             
             name[i]=sc.nextLine();
          }
+         for(int i =0;i<name.length;i++){
+            System.out.print("\nName of index "+i+" Is : "+name[i]);
+         }
         sc.close();
     }
 }
