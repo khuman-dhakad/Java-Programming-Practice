@@ -8,12 +8,13 @@ public class printName{
           sc.nextLine();
 
         String [] name = new String [size];
-         
+         //Taking  name`s input from user and storing in the array
          for(int i=0;i<name.length;i++){
             System.out.print("Enter Name "+(i+1)+" : ");
             
             name[i]=sc.nextLine();
          }
+         //Print all names with index number
          for(int i =0;i<name.length;i++){
             System.out.print("\nName of index "+i+" Is : "+name[i]);
          }
