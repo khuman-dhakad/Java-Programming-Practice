@@ -2,91 +2,34 @@ import java.util.Scanner;
 
 public class BasicProject {
 
-    // Function to calculate the sum of two numbers entered by the user
-    public static void calculateSum(Scanner sc) {
-
-        System.out.print("Enter First Number:");
-        int a = sc.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = sc.nextInt();
-
-        int res = a + b;
-        System.out.println("Result Is:" + res);
+    // Logic functions (clean & reusable)
+    public static int calculateSum(int a, int b) {
+        return a + b;
     }
 
-    // Function to calculate the difference between two numbers
-    public static void calculateDiff(Scanner sc) {
-
-        System.out.print("Enter First Number:");
-        int a = sc.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = sc.nextInt();
-
-        int diff = a - b;
-        System.out.println("Result Is:" + diff);
+    public static int calculateDiff(int a, int b) {
+        return a - b;
     }
 
-    // Function to calculate the multiplication of two numbers
-    public static void calculateMul(Scanner sc) {
-
-        System.out.print("Enter First Number:");
-        int a = sc.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = sc.nextInt();
-
-        int mul = a * b;
-
-        System.out.println("Result Is:" + mul);
-
+    public static int calculateMul(int a, int b) {
+        return a * b;
     }
 
-    // Function to perform division and handle divide-by-zero case
-    public static void calculateDiv(Scanner sc) {
-
-        System.out.print("Enter First Number:");
-        int a = sc.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = sc.nextInt();
-
-        if (b == 0) {
-            System.out.println("Cannot divide by zero");
-        } else {
-            float div = (float)a / b;
-            System.out.println("Result Is:" + div);
-        }
+    public static float calculateDiv(int a, int b) {
+        return (float) a / b;
     }
 
-    // Function to calculate the remainder of two numbers using modulus operator
-    public static void calculateRem(Scanner sc) {
-
-        System.out.print("Enter First Number:");
-        int a = sc.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = sc.nextInt();
-
-        if (b == 0) {
-            System.out.println("Error: Cannot find remainder when divisor is 0.");
-        } else {
-            int rem = a % b;
-            System.out.println("Result Is: " + rem);
-        }
+    public static int calculateRem(int a, int b) {
+        return a % b;
     }
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int choice = 0;
+        int choice;
 
         do {
-            System.out.println("\n----------------------------");
-            System.out.println("| Welcome to My Calculator |");
-            System.out.println("----------------------------");
-
+            System.out.println("\n--- Calculator ---");
             System.out.println("1.Addition");
             System.out.println("2.Subtract");
             System.out.println("3.Multiplication");
@@ -94,32 +37,49 @@ public class BasicProject {
             System.out.println("5.Remainder");
             System.out.println("6.Exit");
 
-            System.out.print("\nEnter Your Choice:");
+            System.out.print("Enter Choice: ");
             choice = sc.nextInt();
 
-            switch (choice) {
-                case 1:
-                    calculateSum(sc);
-                    break;
-                case 2:
-                    calculateDiff(sc);
-                    break;
-                case 3:
-                    calculateMul(sc);
-                    break;
-                case 4:
-                    calculateDiv(sc);
-                    break;
-                case 5:
-                    calculateRem(sc);
-                    break;
-                case 6:
-                    System.out.println("Thankyou BBye!");
-                    sc.close();
-                    return;
-                default:
-                    System.out.println("Enter Valid Choice");
+            if (choice >= 1 && choice <= 5) {
+
+                System.out.print("Enter First Number: ");
+                int a = sc.nextInt();
+
+                System.out.print("Enter Second Number: ");
+                int b = sc.nextInt();
+
+                switch (choice) {
+                    case 1:
+                        System.out.println("Result: " + calculateSum(a, b));
+                        break;
+                    case 2:
+                        System.out.println("Result: " + calculateDiff(a, b));
+                        break;
+                    case 3:
+                        System.out.println("Result: " + calculateMul(a, b));
+                        break;
+                    case 4:
+                        if (b == 0) {
+                            System.out.println("Cannot divide by zero");
+                        } else {
+                            System.out.println("Result: " + calculateDiv(a, b));
+                        }
+                        break;
+                    case 5:
+                        if (b == 0) {
+                            System.out.println("Cannot find remainder");
+                        } else {
+                            System.out.println("Result: " + calculateRem(a, b));
+                        }
+                        break;
+                }
+            } else if (choice != 6) {
+                System.out.println("Invalid Choice");
             }
+
         } while (choice != 6);
+
+        sc.close();
+        System.out.println("Thank you!");
     }
 }
