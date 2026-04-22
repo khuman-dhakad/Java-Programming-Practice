@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class BasicProject {
 
-    // Logic functions (clean & reusable)
     public static int calculateSum(int a, int b) {
         return a + b;
     }
@@ -15,8 +14,8 @@ public class BasicProject {
         return a * b;
     }
 
-    public static float calculateDiv(int a, int b) {
-        return (float) a / b;
+    public static double calculateDiv(int a, int b) {
+        return (double) a / b;
     }
 
     public static int calculateRem(int a, int b) {
@@ -30,12 +29,12 @@ public class BasicProject {
 
         do {
             System.out.println("\n--- Calculator ---");
-            System.out.println("1.Addition");
-            System.out.println("2.Subtract");
-            System.out.println("3.Multiplication");
-            System.out.println("4.Division");
-            System.out.println("5.Remainder");
-            System.out.println("6.Exit");
+            System.out.println("1. Addition");
+            System.out.println("2. Subtraction");
+            System.out.println("3. Multiplication");
+            System.out.println("4. Division");
+            System.out.println("5. Remainder");
+            System.out.println("6. Exit");
 
             System.out.print("Enter Choice: ");
             choice = sc.nextInt();
@@ -48,31 +47,33 @@ public class BasicProject {
                 System.out.print("Enter Second Number: ");
                 int b = sc.nextInt();
 
+                if ((choice == 4 || choice == 5) && b == 0) {
+                    System.out.println("Error: Cannot divide by zero");
+                    continue;
+                }
+
+                double result = 0;
+
                 switch (choice) {
                     case 1:
-                        System.out.println("Result: " + calculateSum(a, b));
+                        result = calculateSum(a, b);
                         break;
                     case 2:
-                        System.out.println("Result: " + calculateDiff(a, b));
+                        result = calculateDiff(a, b);
                         break;
                     case 3:
-                        System.out.println("Result: " + calculateMul(a, b));
+                        result = calculateMul(a, b);
                         break;
                     case 4:
-                        if (b == 0) {
-                            System.out.println("Cannot divide by zero");
-                        } else {
-                            System.out.println("Result: " + calculateDiv(a, b));
-                        }
+                        result = calculateDiv(a, b);
                         break;
                     case 5:
-                        if (b == 0) {
-                            System.out.println("Cannot find remainder");
-                        } else {
-                            System.out.println("Result: " + calculateRem(a, b));
-                        }
+                        result = calculateRem(a, b);
                         break;
                 }
+
+                System.out.println("Result: " + result);
+
             } else if (choice != 6) {
                 System.out.println("Invalid Choice");
             }
