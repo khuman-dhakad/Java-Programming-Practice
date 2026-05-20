@@ -1,8 +1,14 @@
 import java.util.Scanner;
 
+
 public class ATMManagementSystem {
+float balance = 0;
+    public  void checkBalance(){
+    System.out.println("Your Amount = "+balance);
+}
 
     public static void main(String[] args) {
+        ATMManagementSystem obj = new ATMManagementSystem();
 
         Scanner sc = new Scanner(System.in);
 
@@ -19,6 +25,7 @@ public class ATMManagementSystem {
 
             switch(choice){
                 case 1 :
+                    obj.checkBalance();
                     break;
                 case 2 :
                     break;
