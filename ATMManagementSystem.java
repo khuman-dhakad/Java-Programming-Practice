@@ -2,9 +2,12 @@ import java.util.Scanner;
 
 
 public class ATMManagementSystem {
-float balance = 0;
+    float balance = 0;
     public  void checkBalance(){
     System.out.println("Your Amount = "+balance);
+}
+public void addBalance(float amount){
+    balance = balance + amount;
 }
 
     public static void main(String[] args) {
@@ -28,6 +31,10 @@ float balance = 0;
                     obj.checkBalance();
                     break;
                 case 2 :
+                    System.out.print("How much amount you want deposit : ");
+                    float amount = sc.nextFloat();
+                    obj.addBalance(amount);
+                    System.out.println("Amout deposite successfully!");
                     break;
                 case 3 :
                     break;
