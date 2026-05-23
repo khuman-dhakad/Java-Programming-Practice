@@ -9,6 +9,9 @@ public class ATMManagementSystem {
 public void addBalance(float amount){
     balance = balance + amount;
 }
+public void withdrawMoney(float withMoney){
+    balance = balance - withMoney;
+}
 
     public static void main(String[] args) {
         ATMManagementSystem obj = new ATMManagementSystem();
@@ -37,6 +40,10 @@ public void addBalance(float amount){
                     System.out.println("Amout deposite successfully!");
                     break;
                 case 3 :
+                    System.out.print("How much amount you want withdraw : ");
+                    float withMoney = sc.nextFloat();
+                    obj.withdrawMoney(withMoney);
+                    System.out.println("Amout withdraw successfully!");
                     break;
                 case 4 :
                     break;
