@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 public class ATMManagementSystem {
     float balance = 0;
     public  void checkBalance(){
@@ -17,9 +15,6 @@ public void withdrawMoney(float withMoney){
         ATMManagementSystem obj = new ATMManagementSystem();
 
         Scanner sc = new Scanner(System.in);
-
-        
-
             System.out.println("1. Check Balance");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
@@ -46,7 +41,8 @@ public void withdrawMoney(float withMoney){
                     System.out.println("Amout withdraw successfully!");
                     break;
                 case 4 :
-                    break;
+                    System.out.println("Thankyou!");
+                    sc.close();
                     default :
                     System.out.println("Enter valid choice!");
             }
