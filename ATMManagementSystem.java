@@ -10,15 +10,12 @@ public void addBalance(float amount){
 public void withdrawMoney(float withMoney){
     balance = balance - withMoney;
 }
-
     public static void main(String[] args) {
         ATMManagementSystem obj = new ATMManagementSystem();
-
-
             int choice;
             Scanner sc = new Scanner(System.in);
             do{
-            System.out.println("1. Check Balance");
+            System.out.println("\n1. Check Balance");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
             System.out.println("4. Exit");
@@ -34,6 +31,9 @@ public void withdrawMoney(float withMoney){
                 case 2 :
                     System.out.print("How much amount you want deposit : ");
                     float amount = sc.nextFloat();
+                    if(amount<=0){
+                        System.out.println("Deposite amount must be positive!");
+                    }
                     obj.addBalance(amount);
                     System.out.println("Amout deposite successfully!");
                     break;
