@@ -34,12 +34,24 @@ public void withdrawMoney(float withMoney){
                     if(amount<=0){
                         System.out.println("Deposite amount must be positive!");
                     }
+                    else{
                     obj.addBalance(amount);
                     System.out.println("Amout deposite successfully!");
+                    }
                     break;
                 case 3 :
                     System.out.print("How much amount you want withdraw : ");
                     float withMoney = sc.nextFloat();
+                    if(obj.balance == 0){
+                        System.out.println("Insufficient Balance!");
+                        sc.close();
+                        return;
+            }
+                    if(withMoney > obj.balance){
+                        System.out.println("Insufficient Balance!");
+                        sc.close();
+                        return;
+                    }
                     obj.withdrawMoney(withMoney);
                     System.out.println("Amout withdraw successfully!");
                     break;
