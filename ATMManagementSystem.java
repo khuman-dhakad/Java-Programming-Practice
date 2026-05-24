@@ -14,7 +14,10 @@ public void withdrawMoney(float withMoney){
     public static void main(String[] args) {
         ATMManagementSystem obj = new ATMManagementSystem();
 
-        Scanner sc = new Scanner(System.in);
+
+            int choice;
+            Scanner sc = new Scanner(System.in);
+            do{
             System.out.println("1. Check Balance");
             System.out.println("2. Deposit");
             System.out.println("3. Withdraw");
@@ -22,7 +25,7 @@ public void withdrawMoney(float withMoney){
 
             System.out.print("Enter Your Choice : ");
 
-            int choice = sc.nextInt();
+            choice = sc.nextInt();
 
             switch(choice){
                 case 1 :
@@ -43,8 +46,10 @@ public void withdrawMoney(float withMoney){
                 case 4 :
                     System.out.println("Thankyou!");
                     sc.close();
+                    return;
                     default :
                     System.out.println("Enter valid choice!");
             }
+        }while(choice!=4);
     }
 }
