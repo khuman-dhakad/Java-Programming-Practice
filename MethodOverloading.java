@@ -1,16 +1,18 @@
 public class MethodOverloading {
-
+    // overloaded method1
     public static int add(int a, int b) {
         return a + b;
     }
 
-    // New overloaded method
+    // overloaded method1
     public static int add(int a, int b, int c) {
         return a + b + c;
     }
+    // overloaded method1
     public static double add(double a, double b) {
         return a + b;
     }
+    // overloaded method1
     public static String add(String a, String b) {
         return a + b;
     }
