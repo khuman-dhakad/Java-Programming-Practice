@@ -22,7 +22,8 @@ This repository contains my daily Java practice to improve Core Java, problem-so
 - Core Java Fundamentals  
 - Logic Building  
 - Object-Oriented Programming (Learning)  
-- Data Structures & Algorithms (Upcoming)  
+- Data Structures & Algorithms (Upcoming)
+- SQL
 
 ---
 
